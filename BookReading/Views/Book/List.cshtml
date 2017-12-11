@@ -1,0 +1,55 @@
+﻿@model BookReading.Models.IndexListView
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .page-link {
+        color: #FF69B4;
+    }
+    td {
+        font: Algerian;
+        font-size: 20px;
+        color: #FF69B4;
+    }
+    th:hover {
+        background-color: #FFC0CB;
+    }
+</style>
+<table class="table table-dark" >
+    <thead class="thead-dark" style="background-color: #FF69B4; color: #C71585; ">
+        <tr>
+            <th scope="col">Название книги</th>
+            <th scope="col">Автор</th>
+            <th scope="col">Описание</th>
+            <th scope="col">Жанр</th>
+            <th scope="col">Кол-во страниц</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var book in Model.books)
+    {
+        <tr data="@book.Id" onclick="window.location.href='/Book/Details/' + this.getAttribute('data')">
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.Description</td>
+            <td>@book.Genre</td>
+            <td>@book.Pages</td>
+        </tr>
+    } 
+    </tbody>
+</table>
+
+
+<hr/>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination" >
+        @foreach (int index in Enumerable.Range(Model.currentPage, 5))
+        {
+            <li class="page-item">
+                @Html.ActionLink(index.ToString(), "List", new {currentPage = index}, new { @class = "page-link" })
+            </li>
+        } 
+    </ul>
+</nav>   

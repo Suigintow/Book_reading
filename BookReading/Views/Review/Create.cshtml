@@ -1,0 +1,43 @@
+﻿@model BookReading.Models.Review
+
+@{
+    ViewBag.Title = "Создать отзыв";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Создать отзыв</h2>
+
+@using (Html.BeginForm()) {
+    <fieldset>
+        
+		
+        <div class="editor-field">
+            @Html.HiddenFor(model => model.BookId)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Author)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Author, new { maxlength = 25})
+            @Html.ValidationMessageFor(model => model.Author)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Text)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Text, new{maxlength = 5000})
+            @Html.ValidationMessageFor(model => model.Text)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>	
+	@Html.ActionLink("Вернуться к книге", "Details", "Book", new {id = Model.BookId} , null) |
+	@Html.ActionLink("Список", "List", "Book")
+</div>
