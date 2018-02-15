@@ -40,11 +40,18 @@
         @Html.DisplayFor(model => model.Genre)
     </span>
     <br />
+    <span>Top1 comment: </span>
+    <span>
+        @ViewBag.Text
+    </span>
+    <br />
 </fieldset>
+
 <p>
 	@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
 	@Html.ActionLink("Back to List", "List") |
-	@Html.ActionLink("Добавить отзыв", "Create", "Review", new { bookId = Model.Id }, null)
+	@Html.ActionLink("Добавить отзыв", "Create", "Review", new { bookId = Model.Id }, null) |
+	@Html.ActionLink("Топ-20", "Top20", "Review", new { bookId = Model.Id }, null)
 </p>	   
 
 @Html.Partial("ReviewPartial", Model.Reviews)

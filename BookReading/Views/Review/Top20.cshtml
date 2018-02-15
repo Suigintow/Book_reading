@@ -1,0 +1,11 @@
+﻿@model List<BookReading.Models.Review>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Back to List", "List", "Book")
+</p>	   
+
+@Html.Partial("ReviewPartial", Model)

@@ -66,9 +66,29 @@ namespace BookReading.Controllers
         }
 
         [HttpPost]
+        public string EditText(int reviewId, string newText)
+        {
+            var text = _reviewContext.EditText(reviewId, newText);
+            if (text == "")
+            {
+                Response.StatusCode = 404;
+                return "";
+            }
+
+            return text;
+        }
+
+        [HttpPost]
         public void ReportOffensiveReview(int reviewId, string reason)
         {
             _reviewContext.Report(reviewId, reason);
         }
+
+        public ActionResult Top20(int bookId = 0)
+	    {
+            var reviews = _reviewContext.GetTop20(bookId);
+			
+		    return View(reviews);
+	    }
     }
 }

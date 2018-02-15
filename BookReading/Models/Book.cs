@@ -42,13 +42,15 @@ namespace BookReading.Models
 			Genre = newBookData.Genre;
 		}
 
-        public List<Review> Reviews {
-            get {
+        public List<Review> Reviews
+        {
+	        get {
                 using (var db = new Database())
                     return (from r in db.Reviews
-                    where r.BookId == Id
+                    where r.BookId == Id && r.ReportReason == null 
                     select r).Take(10).ToList();
             }
+	        set { new NotImplementedException(); }
         }
 
 	    private class Database : DataConnection

@@ -53,19 +53,19 @@ namespace BookReading.Controllers
 			
 			if (book == null)
 				return HttpNotFound();
-
+            ViewBag.Text = book.Reviews.OrderByDescending(r => r.LikeCount).Take(1).FirstOrDefault().Text;
             return View(book);
         }
 		
 	    public ActionResult Edit(int id = 0)
-	    {
-			var book = _bookContext.GetBook(id);
-
-		    if (book == null)
-			    return HttpNotFound();
-
-		    return View(book);
-	    }
+         	    {
+         			var book = _bookContext.GetBook(id);
+         
+         		    if (book == null)
+         			    return HttpNotFound();
+         
+         		    return View(book);
+         	    }
 
 		[HttpPost]
 	    public ActionResult Edit(Book editBook)

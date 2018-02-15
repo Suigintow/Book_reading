@@ -26,12 +26,41 @@ namespace BookReading.Models
             }
         }
 
+        public string EditText(int reviewId, string newText)
+        {
+            using (var db = new Database())
+            {
+                var review =
+                    db.Reviews.SingleOrDefault(x => x.Id == reviewId);
+
+                if (review == null)
+                    return "";
+
+                review.Text = newText;
+
+                db.Update(review);
+                return review.Text;
+            }
+        }
+
         public List<Review> GetAll()
         {
             using (var db = new Database())
             {
-                var query = (from r in db.Reviews
+                var query = (from r in db.Reviews 
                     select r);
+                return query.ToList();
+            }
+        }
+        
+        public List<Review> GetTop20(int bookId)
+        {
+            using (var db = new Database())
+            {
+                var query = (from r in db.Reviews
+                             where r.BookId == bookId
+                             orderby r.LikeCount descending
+                    select r).Take(20);
                 return query.ToList();
             }
         }

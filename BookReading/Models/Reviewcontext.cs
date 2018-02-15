@@ -20,6 +20,11 @@ namespace BookReading.Models
         {
             return _reviews;
         }
+        
+        public List<Review> GetTop20(int id)
+        {
+            return _reviews;
+        }
 
         public void Report(int reviewId, string reason)
         {
@@ -41,6 +46,11 @@ namespace BookReading.Models
             }
             
             return ++review.LikeCount;
+        }
+
+        public string EditText(int reviewId, string newText)
+        {
+            return "";
         }
     }
 }

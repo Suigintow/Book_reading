@@ -159,6 +159,7 @@
     <Content Include="Images\block.svg" />
     <Content Include="Images\heart.svg" />
     <Content Include="Scripts\addLike.js" />
+    <Content Include="Scripts\editComment.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -170,6 +171,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\reportReview.js" />
     <Content Include="Styles\bootstrap4.css" />
+    <Content Include="Views\Review\Top20.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

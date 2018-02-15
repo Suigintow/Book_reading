@@ -23,7 +23,7 @@
 
             <tr>
                 <td>@Html.DisplayFor(m => review.Author)</td>
-                <td>@Html.DisplayFor(m => review.Text)</td>
+                <td class="edit-btn" data-review="@review.Id"> <span>@Html.DisplayFor(m => review.Text)</span></td>
                 <td class="like-btn" data-review="@review.Id">
                     <img src="~/Images/heart.svg" height="15" /><span>Like: @Html.DisplayFor(m => review.LikeCount)</span>   
                 </td>

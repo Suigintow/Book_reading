@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\MyRyzhik\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_BookReading.-1115546028.00" t="ExcludeRecursive" />
+    <e p="C:\Users\MyRyzhik\Desktop\Book_reading-master" t="IncludeFlat">
+      <e p="BookReading" t="IncludeRecursive">
+        <e p="App_Data" t="Include">
+          <e p="bookreading.mdf" t="Include" />
+          <e p="bookreading_log.ldf" t="Include" />
+          <e p="BookStore.mdf" t="Include" />
+          <e p="BookStore_log.ldf" t="Include" />
+        </e>
+        <e p="App_Start" t="Include">
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="WebApiConfig.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BookReading.csproj" t="IncludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="BookController.cs" t="Include" />
+          <e p="ReviewController.cs" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Images" t="Include">
+          <e p="block.svg" t="Include" />
+          <e p="heart.svg" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Book.cs" t="Include" />
+          <e p="BookContext.cs" t="Include" />
+          <e p="DbBookContext.cs" t="Include" />
+          <e p="DbReviewContext.cs" t="Include" />
+          <e p="IBookContext.cs" t="Include" />
+          <e p="IndexListView.cs" t="Include" />
+          <e p="IReviewContext.cs" t="Include" />
+          <e p="Review.cs" t="Include" />
+          <e p="ReviewContext.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="addLike.js" t="Include" />
+          <e p="jquery-1.4.1-vsdoc.js" t="Include" />
+          <e p="jquery-1.4.1.js" t="Include" />
+          <e p="jquery-1.4.1.min.js" t="Include" />
+          <e p="jquery.validate-vsdoc.js" t="Include" />
+          <e p="jquery.validate.js" t="Include" />
+          <e p="jquery.validate.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.bootstrap.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.bootstrap.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.bootstrap.min.js.map" t="Include" />
+          <e p="jquery.validate.unobtrusive.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          <e p="reportReview.js" t="Include" />
+        </e>
+        <e p="Styles" t="Include">
+          <e p="bootstrap4.css" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="Book" t="Include">
+            <e p="CreateBook.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="List.cshtml" t="Include" />
+          </e>
+          <e p="Review" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Top20.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_layout2.cshtml" t="Include" />
+            <e p="ReviewPartial.cshtml" t="Include" />
+          </e>
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="BookReading.sln" t="IncludeFlat" />
+      <e p="BookReading.Tests" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BookReading.Tests.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
